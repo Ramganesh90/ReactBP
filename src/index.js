@@ -1,13 +1,15 @@
 import React from "react"
 import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import App from "./components/App";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
 
-// eslint-disable-next-line react/prop-types
-const Greetings = (props) => <h1><i>{props.message}</i></h1>;
-
-
-function Hi() {
-    return <Greetings message="Buddy BoilerPlate is working in React" />;
-}
-
-
-render(<Hi />, document.getElementById("app"));
+render(
+    <div className="container">
+        <Router>
+            <App />
+        </Router>
+    </div>,
+    document.getElementById("app")
+);

@@ -8,6 +8,7 @@ class Header extends React.Component {
         return (
             <nav>
                 <NavLink to="/" activeStyle={activeStyle} exact>Home</NavLink>
+                <NavLink to="/courses" activeStyle={activeStyle} exact>Courses</NavLink>
                 <NavLink to="/about" activeStyle={activeStyle} exact>About</NavLink>
             </nav>
         )
